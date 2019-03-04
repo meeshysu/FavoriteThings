@@ -21,6 +21,14 @@ namespace MyFavoriteThings
             myFavGame.WorstCharacter();
 
             Console.ReadLine();
+
+            var myKindOfComputer = new MyComputer("HyperBeast", "Scream One", ComputerType.gaming);
+
+            myKindOfComputer.HyperBeast();
+            myKindOfComputer.TheMouse();
+            myKindOfComputer.WhatDoYouHave();
+
+            Console.ReadLine();
         }
     }
 }
