@@ -13,6 +13,14 @@ namespace MyFavoriteThings
             myFavIvan.LetsTalk();
 
             Console.ReadLine();
+
+            var myFavGame = new VideoGame("Overwatch", "JunkRat", "Reinhardt");
+
+            myFavGame.ItIsKnown();
+            myFavGame.MyCharacter();
+            myFavGame.WorstCharacter();
+
+            Console.ReadLine();
         }
     }
 }
