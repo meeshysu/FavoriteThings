@@ -6,7 +6,13 @@ namespace MyFavoriteThings
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var myFavIvan = new MyCat("Ivan", "Fluffy", true);
+
+            myFavIvan.BestBoy();
+            myFavIvan.SuperSoft();
+            myFavIvan.LetsTalk();
+
+            Console.ReadLine();
         }
     }
 }
