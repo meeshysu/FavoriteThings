@@ -27,6 +27,7 @@ namespace MyFavoriteThings
             Console.WriteLine("My gaming mouse is one of the best and lightest. It's called the 'Scream One'. Professional gamers use this mouse in comps.");
         }
 
+        //does not work properly at the moment - coming back to it.
         public void WhatDoYouHave()
         {
             Console.WriteLine("What kind of computer do you have?");

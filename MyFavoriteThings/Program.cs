@@ -29,6 +29,14 @@ namespace MyFavoriteThings
             myKindOfComputer.WhatDoYouHave();
 
             Console.ReadLine();
+
+            var myPlants = new Plants("Perennials", "Annuals", "WoodyLandscapes");
+
+            myPlants.AllPerennials();
+            myPlants.AllAnnuals();
+            myPlants.AllWoody();
+
+            Console.ReadLine();
         }
     }
 }
