@@ -5,41 +5,22 @@ namespace MyFavoriteThings
 {
     class MyComputer
     {
-        public string ComputerCase { get; }
-        public string Mouse { get; }
-        public ComputerType Type { get; }
-        public MyComputer(string computercase, string mouse, ComputerType type)
+        public int HowManyOf { get; protected set; }
+        public bool HasBacklight { get; protected set; }
+        public ComputerType Type { get; protected set; }
+
+        public MyComputer(ComputerType type, int howManyOf, bool hasBacklight)
         {
-            ComputerCase = computercase;
-            Mouse = mouse;
+            HowManyOf = howManyOf;
+            HasBacklight = hasBacklight;
             Type = type;
         }
-        public void HyperBeast()
-        {
-            Console.WriteLine("My computer case is the HyperBeast edition, number 999, by NZXT. It's based off the Counter Strike skin.");
-        }
-        public void TheMouse()
-        {
-            Console.WriteLine("My gaming mouse is one of the best and lightest. It's called the 'Scream One'. Professional gamers use this mouse in comps.");
-        }
-
-        //does not work properly at the moment - coming back to it.
-        public void WhatDoYouHave()
-        {
-            Console.WriteLine("What kind of computer do you have?");
-            Console.ReadLine();
-            if (Type == ComputerType.gaming)
-            {
-                Console.WriteLine("You are accepted to the cool group.");
-            }
-            if (Type != ComputerType.gaming)
-            {
-                Console.WriteLine("Whatevs man.");
-            }
-        }
     }
+
     enum ComputerType
     {
-        gaming
+        gaming,
+        laptop,
+        mac
     }
 }

@@ -1,5 +1,6 @@
 ﻿using System;
 using MyFavoriteThings.HoldMyThings.Animals;
+using MyFavoriteThings.HoldMyThings.Computers;
 using MyFavoriteThings.HoldMyThings.VideoGames;
 
 namespace MyFavoriteThings
@@ -36,27 +37,30 @@ namespace MyFavoriteThings
             var myFavOW = new Overwatch();
             myFavOW.JunkRat();
 
-            //var myFavGame = new VideoGame("Overwatch", "JunkRat", "Reinhardt");
+            var myFavComputerMouse = new Mouse();
+            myFavComputerMouse.Click();
 
-            //myFavGame.ItIsKnown();
-            //myFavGame.MyCharacter();
-            //myFavGame.WorstCharacter();
+            var myFavKeyboard = new Keyboard();
+            myFavKeyboard.ClickClack();
 
-            //Console.ReadLine();
+            var myFavCase = new ComputerCase();
+            myFavCase.Whisper();
 
-            //var myKindOfComputer = new MyComputer("HyperBeast", "Scream One", ComputerType.gaming);
+            var myFavLaptop = new Laptop();
+            myFavLaptop.ClickClackGlow();
 
-            //myKindOfComputer.HyperBeast();
-            //myKindOfComputer.TheMouse();
-            //myKindOfComputer.WhatDoYouHave();
-
-            //Console.ReadLine();
-
-            //var myPlants = new Plants("Perennials", "Annuals", "WoodyLandscapes");
-
-            //myPlants.AllPerennials();
-            //myPlants.AllAnnuals();
-            //myPlants.AllWoody();
+            Console.WriteLine("What kind of computer do you have?");
+            var computerChoice = Console.ReadLine().ToLower();
+            if (computerChoice == "gaming")
+            {
+                Console.WriteLine("You're super cool.");
+            } else if (computerChoice == "mac"){
+                Console.WriteLine("Uh yeah you're a loser...");
+            } else if (computerChoice == "laptop")
+            {
+                Console.WriteLine("If it's a mac, well you know you suck, but if it's a PC then we good.");
+            }
+            
 
             Console.ReadLine();
         }
