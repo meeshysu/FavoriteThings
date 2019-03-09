@@ -1,6 +1,7 @@
 ﻿using System;
 using MyFavoriteThings.HoldMyThings.Animals;
 using MyFavoriteThings.HoldMyThings.Computers;
+using MyFavoriteThings.HoldMyThings.Plants;
 using MyFavoriteThings.HoldMyThings.VideoGames;
 
 namespace MyFavoriteThings
@@ -36,6 +37,18 @@ namespace MyFavoriteThings
 
             var myFavOW = new Overwatch();
             myFavOW.JunkRat();
+
+            var myFavCone = new PapayaConeflower();
+            myFavCone.TheFlower();
+
+            var myFavSucculent = new AlienFingerSucculent();
+            myFavSucculent.UFO();
+
+            var myFavTree = new TulipPoplar();
+            myFavTree.TreeTalk();
+
+            var myFavBush = new BlueBeard();
+            myFavBush.RunningOutOfThingsToNameAs();
 
             var myFavComputerMouse = new Mouse();
             myFavComputerMouse.Click();
